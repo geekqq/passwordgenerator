@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>Password Generator</h1>
+        <input type="number" id="length" value="1" min="1"><br>
+
+        <label for="lowerCase">
+            <input type="checkbox" name="unit" id="lowerCase">
+            lowerCase
+        </label><br>
+
+        <label for="upperCase">
+            <input type="checkbox" name="unit" id="upperCase">
+            upperCase
+        </label><br>
+
+        <label for="numbers">
+            <input type="checkbox" name="unit" id="numbers">
+            numbers
+        </label><br>
+        <label for="symbols">
+            <input type="checkbox" name="unit" id="symbols">
+            symbols
+        </label><br>
+
+        <button type="button" onclick="generatePassword()">generate</button>
+        <p id="result"></p>
+        <span id="copyButton" onclick="copyPassword()" style="display: none;">📋</span>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
